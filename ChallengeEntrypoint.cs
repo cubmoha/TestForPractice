@@ -23,6 +23,8 @@ namespace DotnetChallenge
 
         void Challenge0() {
             Console.WriteLine("All the way to do it" ); // TODO part 1 - Add a string of your choice, whatever you want
+
+            Console.WriteLine("hello world");
         }
 
 
