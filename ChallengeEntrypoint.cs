@@ -22,11 +22,13 @@ namespace DotnetChallenge
         }
 
         void Challenge0() {
-            Console.WriteLine(); // TODO part 1 - Add a string of your choice, whatever you want
+            Console.WriteLine("All the way to do it" ); // TODO part 1 - Add a string of your choice, whatever you want
         }
 
 
-        /*TODO something is missing*/ Challenge1() {
+
+        /*TODO something is missing*/
+        List<string>Challenge1() {
    
             // objective: You've been tasked with taking an encrypted string that an operative discovered. We need to store it in
             // a List so it can be grabbed by another operative later but some pieces are missing. 
@@ -53,7 +55,7 @@ namespace DotnetChallenge
                 "WWVzLCBJIGFtIGEgY3JpbWluYWwuIE15IGNyaW1lIGlzIHRoYXQgb2YgY3VyaW9zaXR5LiBJIGFtIGEgaGFja2VyLCBhbmQgdGhpcyBpcyBteSBtYW5pZmVzdG8u"
             };
 
-            foreach(int encodedStr in encodedStrings) {  // TODO - hmmm...something is wonky..
+            foreach( string int encodedStr in encodedStrings) {  // TODO - hmmm...something is wonky..
                 byte[] data = Convert.FromBase64String(encodedStr);
                 string decodedString = System.Text.Encoding.UTF8.GetString(data);
                 
@@ -96,11 +98,11 @@ namespace DotnetChallenge
             };
 
             int index = 0;
-            while( < iceLocations.Length) { // TODO: What's missing?
-                string iceLocation = iceLocations[SOMETHING]; // TODO: SOMETHING is definitely off...
+            while(index < iceLocations.Length) { // TODO: What's missing?
+                string iceLocation = iceLocations[index]; // TODO: SOMETHING is definitely off...
                 IceBreaker.BreakIce(iceLocation);
                 
-                index--; // TODO: Something is off here? How many times is this loop going to iterate?
+                index++; // TODO: Something is off here? How many times is this loop going to iterate?
             }
         }
 
@@ -118,6 +120,7 @@ namespace DotnetChallenge
             };
 
             // TODO: we have the data but it needs to be looped and printed...hmm....
+
         }
     }
 }
